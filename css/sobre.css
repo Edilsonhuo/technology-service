@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f1f6fc31;
+}
+
+section, footer{
+    padding: 55px 0;
+}
+
+h3{
+    font-size: 54px;
+}
+
+p{
+    color: #0000009c;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+   
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 14px;
+}
+
+
+
+nav ul a:not(.botao)::after{
+    content: " ";
+    background-color: #227ef0;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+.botao{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+.botao:hover{
+    background-color: #227ef0;
+}
+
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 90px;
+    color: white;
+}
+
+.footer{
+    background-color: #4f9cf9;
+    text-align: center;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+/* Sobre */
+.sobres .container{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre .container .div-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.sobre .container .div-text h3{
+    font-size: 50px;
+}
+.sobre .container .div-text p{
+    font-size: 16px;
+    color: black;
+    padding: 5px 0 10px 0;
+}
+
+.sobre .container .div-img{
+    width: 50%;
+}
+
+.sobre .container .div-img img{
+    width: 100%;
+}
+
+
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a ;
+    }to{
+        outline: 15px solid #20354e8a ;
+    }
+}
+
+.botaoo{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+.botaoo:hover{
+    background-color: #227ef0;
+}
+
+.botaoo.btn-animado{
+    animation: animate-outline 1s ease-out infinite;
+}
